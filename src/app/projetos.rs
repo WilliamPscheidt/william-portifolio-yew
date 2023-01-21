@@ -4,7 +4,9 @@ use yew::prelude::*;
 pub fn Projetos() -> Html {
     html! {
         <section class={"projetos"}>
-            <span>{"Projetos"}</span>
+            <h3 class={"title"}>
+                {"Projetos"}
+            </h3>
             <p>{"Minha lista de projetos mais recentes:"}</p>
         </section>
     }

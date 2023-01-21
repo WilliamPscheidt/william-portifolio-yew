@@ -4,14 +4,14 @@ use yew::prelude::*;
 pub fn HeaderComponent() -> Html {
     html! {
         <header>
-            <ul>
-                <li>{"/William"}</li>
-                <span>{"·"}</span>
-                <li>{"/Projetos"}</li>
-                <span>{"·"}</span>
-                <li>{"/Contato"}</li>
-            </ul>
-            <h1>{"William Pscheidt Polaski"}</h1>
+            <nav class={"header"}>
+                <a href={"#"}>{"/William"}</a>
+                <span id={"span-header"}>{"·"}</span>
+                <a href={"#"}>{"/Projetos"}</a>
+                <span id={"span-header"}>{"·"}</span>
+                <a href={"#"}>{"/Contato"}</a>
+            </nav>
+            <h1 class={"my-name"}>{"William Pscheidt Polaski"}</h1>
         </header>
     }
 }

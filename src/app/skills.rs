@@ -4,7 +4,9 @@ use yew::prelude::*;
 pub fn Skills() -> Html {
     html! {
         <section class={"skills"}>
-            <span>{"Skills"}</span>
+            <h3 class={"title"}>
+                {"Skills"}
+            </h3>
             <p>{"Atualmente minhas principais habilidades são em:"}</p>
         </section>
     }

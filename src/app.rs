@@ -9,11 +9,13 @@ mod contato;
 pub fn app() -> Html {
     html! {
         <main>
-            <header::HeaderComponent/>
-            <sobre::Sobre/>
-            <skills::Skills/>
-            <projetos::Projetos/>
-            <contato::Contato/>
+            <div class={"content"}>
+                <header::HeaderComponent/>
+                <sobre::Sobre/>
+                <skills::Skills/>
+                <projetos::Projetos/>
+                //<contato::Contato/>
+            </div>
         </main>
     }
 }
