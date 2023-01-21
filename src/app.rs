@@ -4,6 +4,7 @@ mod sobre;
 mod skills;
 mod projetos;
 mod contato;
+mod footer;
 
 #[function_component(App)]
 pub fn app() -> Html {
@@ -14,8 +15,9 @@ pub fn app() -> Html {
                 <sobre::Sobre/>
                 <skills::Skills/>
                 <projetos::Projetos/>
-                //<contato::Contato/>
+                <contato::Contato/>
             </div>
+            <footer::FooterComponent/>
         </main>
     }
 }

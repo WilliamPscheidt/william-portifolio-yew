@@ -12,6 +12,7 @@ pub fn HeaderComponent() -> Html {
                 <a href={"#"}>{"/Contato"}</a>
             </nav>
             <h1 class={"my-name"}>{"William Pscheidt Polaski"}</h1>
+            <h1 class={"my-title"}>{"Back-end Developer"}</h1>
         </header>
     }
 }

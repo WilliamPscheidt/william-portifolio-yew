@@ -11,6 +11,8 @@ html {
   box-sizing: border-box;
 }
 
+
+
 .content {
   margin-top: 80px;
   margin-left: 80px;
@@ -35,7 +37,27 @@ html {
 }
 
 .content header .my-name {
-  padding: 40px 0;
+  margin-top: 40px;
+  margin-bottom: -15px;
+}
+
+.content header .my-title {
+  font-weight: 1;
+  margin-bottom: 2px;
+  position: relative;
+  display: inline-block;
+}
+
+.content header .my-title::after {
+  position: absolute;
+  height: 13px;
+  z-index: -1;
+  content: "\00A0";
+  width: 150px;
+  bottom: 12px;
+  left: -5px;
+  display: block;
+  background-color: #22e96457;  
 }
 
 // Sobre
@@ -60,7 +82,7 @@ html {
   bottom: 12px;
   left: -5px;
   display: block;
-  background-color: #32e959;
+  background-color: #22e9646e;
 }
 
 .content .sobre p {
@@ -70,4 +92,52 @@ html {
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   color: #222222;
+}
+
+.content .skills .skills_ {
+  display: flex;
+  flex-direction: row;
+  max-width: 500px;
+  flex-wrap: wrap;
+}
+
+.content .skills .skills_ .technology {
+  margin-top: 10px;
+}
+
+.content .skills .skills_ .technology #skill {
+  width: 25px;
+  height: 25px;
+  border-radius: 10px;
+  margin: 0 5px;
+}
+
+.content .skills .skills_ .technology {
+  display: flex;
+  margin-right: 5px;
+}
+
+.content .skills .skills_ .technology #separator {
+  padding: 0 0px;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 14px;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer .footer-text {
+  font-weight: 100;
+  font-size: 12px;
+  padding: 40px 0;
 }
