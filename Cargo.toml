@@ -1,0 +1,12 @@
+[package]
+name = "William_portifolio"
+version = "0.1.0"
+edition = "2021"
+description = "Esse é o meu portifolio"
+readme = "README.md"
+keywords = ["yew", "trunk"]
+categories = ["gui", "wasm", "web-programming"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[dependencies]
+yew = { version="0.20", features=["csr"] }
